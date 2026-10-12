@@ -1,0 +1,87 @@
+# ==========================================
+# EVO-GRAPH - Git Ignore Rules
+# ==========================================
+
+# API keys and environment secrets
+.env
+.env.*
+!.env.example
+secrets/
+credentials.json
+
+# Python virtual environments
+venv/
+.venv/
+env/
+eval_env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Generated embeddings
+embeddings/
+
+# Backups
+*.bak
+*.backup
+*.dynamic_backup
+app_backup_*.py
+main_backup_*.py
+*.dynamic_backup.py
+
+# Archives
+*.zip
+
+# Generated graph exports
+*.gexf
+
+# Logs and temporary files
+*.log
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Old EVO-GRAPH versions and experiments
+COSMIC_BLOOM_CODE_PATCH/
+COSMIC_BLOOM_FIXED_FULL_UPDATE/
+EVO_GRAPH_COSMIC_BLOOM/
+EVO_GRAPH_Cinematic_Visualizer/
+EVO_GRAPH_DYNAMIC_GRAPH_UPGRADE/
+EVO_GRAPH_Original_Graph_Test/
+EVO_GRAPH_Original_Graph_Test_Repaired/
+EVO_GRAPH_Professional_Graphviz_Style/
+EVO_GRAPH_Professional_Knowledge_Graph/
+_INSPECT_EVO_GRAPH_SEMANTIC_UPGRADE/
+_INSPECT_evo_graph_experiment_phase/
+
+# Experimental backups
+data/evo_graph_backup_before_fix.json
+data/experiment/backup_*/
+data/experiment/*backup*
+graph/*backup*.py
+
+# Generated experiment outputs
+data/experiment/*results*.json
+data/experiment/*results*.jsonl
+data/experiment/*evaluation*.json
+data/experiment/*benchmark*.json
+data/experiment/*_graph.json
+
+# Local test data
+data/text_memory_test.json
+
+# Large benchmark datasets
+data/humaneval/

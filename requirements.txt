@@ -1,0 +1,5 @@
+python-dotenv
+networkx
+streamlit
+graphviz
+ollama

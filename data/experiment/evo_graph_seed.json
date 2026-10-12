@@ -1,0 +1,205 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "type": "SKILL",
+      "name": "AI Agents",
+      "id": "skill_01"
+    },
+    {
+      "type": "SKILL",
+      "name": "C++ DSA",
+      "id": "skill_02"
+    },
+    {
+      "type": "SKILL",
+      "name": "Cloud",
+      "id": "skill_03"
+    },
+    {
+      "type": "SKILL",
+      "name": "DBMS",
+      "id": "skill_04"
+    },
+    {
+      "type": "SKILL",
+      "name": "Machine Learning",
+      "id": "skill_05"
+    },
+    {
+      "type": "SKILL",
+      "name": "Python",
+      "id": "skill_06"
+    },
+    {
+      "type": "SKILL",
+      "name": "RAG",
+      "id": "skill_07"
+    },
+    {
+      "type": "SKILL",
+      "name": "SQL",
+      "id": "skill_08"
+    },
+    {
+      "type": "EXPERIENCE",
+      "name": "For How should I debug a Python error? use the key concepts: Read the traceback and error message; Locate the failing line; Inspect relevant variables and assumptions; Reproduce the issue and test a focused fix",
+      "confidence": 0.8,
+      "validated": true,
+      "feedback_count": 0,
+      "id": "seed_exp_01"
+    },
+    {
+      "type": "EXPERIENCE",
+      "name": "For What is the difference between a Python list and tuple? use the key concepts: Lists are mutable; Tuples are immutable; Both are ordered sequences; Tuples are useful for fixed collections",
+      "confidence": 0.8,
+      "validated": true,
+      "feedback_count": 0,
+      "id": "seed_exp_02"
+    },
+    {
+      "type": "EXPERIENCE",
+      "name": "For What is the time complexity of binary search and why? use the key concepts: Time complexity is O(log n); Each step halves the remaining search interval; It requires sorted data",
+      "confidence": 0.8,
+      "validated": true,
+      "feedback_count": 0,
+      "id": "seed_exp_03"
+    },
+    {
+      "type": "EXPERIENCE",
+      "name": "For What is the difference between a stack and a queue? use the key concepts: Stack uses LIFO; Queue uses FIFO; Stack operations occur at the top; Queue inserts at the rear and removes from the front",
+      "confidence": 0.8,
+      "validated": true,
+      "feedback_count": 0,
+      "id": "seed_exp_04"
+    },
+    {
+      "type": "EXPERIENCE",
+      "name": "For What is the difference between a primary key and a foreign key? use the key concepts: Primary key uniquely identifies rows; Primary key cannot contain duplicate values; Foreign key references a key in another or the same table; Foreign keys enforce referential relationships",
+      "confidence": 0.8,
+      "validated": true,
+      "feedback_count": 0,
+      "id": "seed_exp_05"
+    },
+    {
+      "type": "EXPERIENCE",
+      "name": "For Why is database normalization used? use the key concepts: It reduces data redundancy; It helps prevent update, insert, and delete anomalies; It organizes data into related tables; Normalization improves data integrity",
+      "confidence": 0.8,
+      "validated": true,
+      "feedback_count": 0,
+      "id": "seed_exp_06"
+    },
+    {
+      "type": "EXPERIENCE",
+      "name": "For What does an INNER JOIN do in SQL? use the key concepts: It returns rows with matching values in both joined tables; The join uses a specified join condition; Non-matching rows are excluded",
+      "confidence": 0.8,
+      "validated": true,
+      "feedback_count": 0,
+      "id": "seed_exp_07"
+    },
+    {
+      "type": "EXPERIENCE",
+      "name": "For What is the difference between public, private, and hybrid cloud? use the key concepts: Public cloud resources are provided by a third-party provider; Private cloud is dedicated to one organization; Hybrid cloud combines private and public environments; Hybrid setups can move or integrate workloads across environments",
+      "confidence": 0.8,
+      "validated": true,
+      "feedback_count": 0,
+      "id": "seed_exp_08"
+    },
+    {
+      "type": "EXPERIENCE",
+      "name": "For What is overfitting in machine learning? use the key concepts: The model learns training data too closely; Training performance is high while generalization is poor; It can be reduced using regularization, more data, simpler models, or validation",
+      "confidence": 0.8,
+      "validated": true,
+      "feedback_count": 0,
+      "id": "seed_exp_09"
+    },
+    {
+      "type": "EXPERIENCE",
+      "name": "For What is the Gini impurity used for in a decision tree? use the key concepts: It measures node impurity; It is used to evaluate candidate splits; Lower impurity indicates a more homogeneous node",
+      "confidence": 0.8,
+      "validated": true,
+      "feedback_count": 0,
+      "id": "seed_exp_10"
+    },
+    {
+      "type": "EXPERIENCE",
+      "name": "For What is retrieval-augmented generation (RAG)? use the key concepts: A retriever finds relevant external or stored information; Retrieved context is supplied to the language model; The model generates an answer using that context; RAG can ground responses in a knowledge source",
+      "confidence": 0.8,
+      "validated": true,
+      "feedback_count": 0,
+      "id": "seed_exp_11"
+    },
+    {
+      "type": "EXPERIENCE",
+      "name": "For Why would an AI agent use memory? use the key concepts: Memory stores information from previous interactions; Relevant memories can be retrieved for later tasks; Memory can improve continuity and personalization; Stored information should be managed and validated to avoid bad memories",
+      "confidence": 0.8,
+      "validated": true,
+      "feedback_count": 0,
+      "id": "seed_exp_12"
+    }
+  ],
+  "edges": [
+    {
+      "relationship": "IMPROVES",
+      "source": "seed_exp_01",
+      "target": "skill_06"
+    },
+    {
+      "relationship": "IMPROVES",
+      "source": "seed_exp_02",
+      "target": "skill_06"
+    },
+    {
+      "relationship": "IMPROVES",
+      "source": "seed_exp_03",
+      "target": "skill_02"
+    },
+    {
+      "relationship": "IMPROVES",
+      "source": "seed_exp_04",
+      "target": "skill_02"
+    },
+    {
+      "relationship": "IMPROVES",
+      "source": "seed_exp_05",
+      "target": "skill_04"
+    },
+    {
+      "relationship": "IMPROVES",
+      "source": "seed_exp_06",
+      "target": "skill_04"
+    },
+    {
+      "relationship": "IMPROVES",
+      "source": "seed_exp_07",
+      "target": "skill_08"
+    },
+    {
+      "relationship": "IMPROVES",
+      "source": "seed_exp_08",
+      "target": "skill_03"
+    },
+    {
+      "relationship": "IMPROVES",
+      "source": "seed_exp_09",
+      "target": "skill_05"
+    },
+    {
+      "relationship": "IMPROVES",
+      "source": "seed_exp_10",
+      "target": "skill_05"
+    },
+    {
+      "relationship": "IMPROVES",
+      "source": "seed_exp_11",
+      "target": "skill_07"
+    },
+    {
+      "relationship": "IMPROVES",
+      "source": "seed_exp_12",
+      "target": "skill_01"
+    }
+  ]
+}

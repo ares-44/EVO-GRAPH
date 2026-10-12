@@ -1,0 +1,2730 @@
+{
+  "benchmark": "EVO-GRAPH 250-Question Targeted Retrieval Benchmark",
+  "version": "1.0",
+  "source_basis": "The 12 seed questions used by the current EVO-GRAPH benchmark.",
+  "relevance_scale": {
+    "2": "highly/directly relevant",
+    "1": "related/useful",
+    "0": "explicit hard negative / not relevant"
+  },
+  "evaluation_rule": "A seed absent from a relevance map is treated as relevance 0.",
+  "seed_map": [
+    {
+      "id": "seed_001",
+      "category": "Python",
+      "concept": "debugging Python errors"
+    },
+    {
+      "id": "seed_002",
+      "category": "Python",
+      "concept": "Python lists and tuples"
+    },
+    {
+      "id": "seed_003",
+      "category": "C++ DSA",
+      "concept": "binary search time complexity"
+    },
+    {
+      "id": "seed_004",
+      "category": "C++ DSA",
+      "concept": "stack versus queue"
+    },
+    {
+      "id": "seed_005",
+      "category": "DBMS",
+      "concept": "primary keys and foreign keys"
+    },
+    {
+      "id": "seed_006",
+      "category": "DBMS",
+      "concept": "database normalization"
+    },
+    {
+      "id": "seed_007",
+      "category": "SQL",
+      "concept": "INNER JOIN"
+    },
+    {
+      "id": "seed_008",
+      "category": "Cloud",
+      "concept": "public, private, and hybrid cloud"
+    },
+    {
+      "id": "seed_009",
+      "category": "Machine Learning",
+      "concept": "overfitting"
+    },
+    {
+      "id": "seed_010",
+      "category": "Machine Learning",
+      "concept": "Gini impurity in decision trees"
+    },
+    {
+      "id": "seed_011",
+      "category": "RAG",
+      "concept": "retrieval-augmented generation"
+    },
+    {
+      "id": "seed_012",
+      "category": "AI Agents",
+      "concept": "agent memory"
+    }
+  ],
+  "questions": [
+    {
+      "id": "B001",
+      "category": "Python",
+      "type": "direct_or_paraphrase",
+      "question": "What is debugging Python errors?",
+      "relevance": {
+        "seed_001": 2
+      },
+      "target_seed": "seed_001"
+    },
+    {
+      "id": "B002",
+      "category": "Python",
+      "type": "direct_or_paraphrase",
+      "question": "Explain debugging Python errors.",
+      "relevance": {
+        "seed_001": 2
+      },
+      "target_seed": "seed_001"
+    },
+    {
+      "id": "B003",
+      "category": "Python",
+      "type": "direct_or_paraphrase",
+      "question": "How does debugging Python errors work?",
+      "relevance": {
+        "seed_001": 2
+      },
+      "target_seed": "seed_001"
+    },
+    {
+      "id": "B004",
+      "category": "Python",
+      "type": "direct_or_paraphrase",
+      "question": "Why is debugging Python errors important?",
+      "relevance": {
+        "seed_001": 2
+      },
+      "target_seed": "seed_001"
+    },
+    {
+      "id": "B005",
+      "category": "Python",
+      "type": "direct_or_paraphrase",
+      "question": "What is the main purpose of debugging Python errors?",
+      "relevance": {
+        "seed_001": 2
+      },
+      "target_seed": "seed_001"
+    },
+    {
+      "id": "B006",
+      "category": "Python",
+      "type": "conceptual",
+      "question": "Why would a developer need to understand debugging Python errors?",
+      "relevance": {
+        "seed_001": 2
+      },
+      "target_seed": "seed_001"
+    },
+    {
+      "id": "B007",
+      "category": "Python",
+      "type": "conceptual",
+      "question": "What problem does debugging Python errors solve?",
+      "relevance": {
+        "seed_001": 2
+      },
+      "target_seed": "seed_001"
+    },
+    {
+      "id": "B008",
+      "category": "Python",
+      "type": "conceptual",
+      "question": "What happens when debugging Python errors is used correctly?",
+      "relevance": {
+        "seed_001": 2
+      },
+      "target_seed": "seed_001"
+    },
+    {
+      "id": "B009",
+      "category": "Python",
+      "type": "conceptual",
+      "question": "What are the main ideas behind debugging Python errors?",
+      "relevance": {
+        "seed_001": 2
+      },
+      "target_seed": "seed_001"
+    },
+    {
+      "id": "B010",
+      "category": "Python",
+      "type": "conceptual",
+      "question": "What practical decision depends on understanding debugging Python errors?",
+      "relevance": {
+        "seed_001": 2
+      },
+      "target_seed": "seed_001"
+    },
+    {
+      "id": "B011",
+      "category": "Python",
+      "type": "related",
+      "question": "How is debugging Python errors related to good system or program design?",
+      "relevance": {
+        "seed_001": 2,
+        "seed_002": 1
+      },
+      "target_seed": "seed_001"
+    },
+    {
+      "id": "B012",
+      "category": "Python",
+      "type": "related",
+      "question": "What common mistake can happen when working with debugging Python errors?",
+      "relevance": {
+        "seed_001": 2,
+        "seed_002": 1
+      },
+      "target_seed": "seed_001"
+    },
+    {
+      "id": "B013",
+      "category": "Python",
+      "type": "related",
+      "question": "How would you explain the benefit of debugging Python errors to a beginner?",
+      "relevance": {
+        "seed_001": 2,
+        "seed_002": 1
+      },
+      "target_seed": "seed_001"
+    },
+    {
+      "id": "B014",
+      "category": "Python",
+      "type": "related",
+      "question": "When would choosing the right approach to debugging Python errors matter?",
+      "relevance": {
+        "seed_001": 2,
+        "seed_002": 1
+      },
+      "target_seed": "seed_001"
+    },
+    {
+      "id": "B015",
+      "category": "Python",
+      "type": "related",
+      "question": "What should be considered before applying debugging Python errors?",
+      "relevance": {
+        "seed_001": 2,
+        "seed_002": 1
+      },
+      "target_seed": "seed_001"
+    },
+    {
+      "id": "B016",
+      "category": "Python",
+      "type": "hard_negative",
+      "question": "How is seed_002 different from debugging Python errors?",
+      "relevance": {
+        "seed_001": 2,
+        "seed_002": 0
+      },
+      "target_seed": "seed_001"
+    },
+    {
+      "id": "B017",
+      "category": "Python",
+      "type": "hard_negative",
+      "question": "Why should seed_002 not be confused with debugging Python errors?",
+      "relevance": {
+        "seed_001": 2,
+        "seed_002": 0
+      },
+      "target_seed": "seed_001"
+    },
+    {
+      "id": "B018",
+      "category": "Python",
+      "type": "hard_negative",
+      "question": "Which is more directly relevant here: seed_002 or debugging Python errors, and why?",
+      "relevance": {
+        "seed_001": 2,
+        "seed_002": 0
+      },
+      "target_seed": "seed_001"
+    },
+    {
+      "id": "B019",
+      "category": "Python",
+      "type": "cross_concept",
+      "question": "How could debugging Python errors interact with seed_002 in a real application?",
+      "relevance": {
+        "seed_001": 2,
+        "seed_002": 1,
+        "seed_009": 1
+      },
+      "target_seed": "seed_001"
+    },
+    {
+      "id": "B020",
+      "category": "Python",
+      "type": "cross_concept",
+      "question": "How could knowledge of debugging Python errors help when working with seed_009?",
+      "relevance": {
+        "seed_001": 2,
+        "seed_002": 1,
+        "seed_009": 1
+      },
+      "target_seed": "seed_001"
+    },
+    {
+      "id": "B021",
+      "category": "Python",
+      "type": "direct_or_paraphrase",
+      "question": "What is Python lists and tuples?",
+      "relevance": {
+        "seed_002": 2
+      },
+      "target_seed": "seed_002"
+    },
+    {
+      "id": "B022",
+      "category": "Python",
+      "type": "direct_or_paraphrase",
+      "question": "Explain Python lists and tuples.",
+      "relevance": {
+        "seed_002": 2
+      },
+      "target_seed": "seed_002"
+    },
+    {
+      "id": "B023",
+      "category": "Python",
+      "type": "direct_or_paraphrase",
+      "question": "How does Python lists and tuples work?",
+      "relevance": {
+        "seed_002": 2
+      },
+      "target_seed": "seed_002"
+    },
+    {
+      "id": "B024",
+      "category": "Python",
+      "type": "direct_or_paraphrase",
+      "question": "Why is Python lists and tuples important?",
+      "relevance": {
+        "seed_002": 2
+      },
+      "target_seed": "seed_002"
+    },
+    {
+      "id": "B025",
+      "category": "Python",
+      "type": "direct_or_paraphrase",
+      "question": "What is the main purpose of Python lists and tuples?",
+      "relevance": {
+        "seed_002": 2
+      },
+      "target_seed": "seed_002"
+    },
+    {
+      "id": "B026",
+      "category": "Python",
+      "type": "conceptual",
+      "question": "Why would a developer need to understand Python lists and tuples?",
+      "relevance": {
+        "seed_002": 2
+      },
+      "target_seed": "seed_002"
+    },
+    {
+      "id": "B027",
+      "category": "Python",
+      "type": "conceptual",
+      "question": "What problem does Python lists and tuples solve?",
+      "relevance": {
+        "seed_002": 2
+      },
+      "target_seed": "seed_002"
+    },
+    {
+      "id": "B028",
+      "category": "Python",
+      "type": "conceptual",
+      "question": "What happens when Python lists and tuples is used correctly?",
+      "relevance": {
+        "seed_002": 2
+      },
+      "target_seed": "seed_002"
+    },
+    {
+      "id": "B029",
+      "category": "Python",
+      "type": "conceptual",
+      "question": "What are the main ideas behind Python lists and tuples?",
+      "relevance": {
+        "seed_002": 2
+      },
+      "target_seed": "seed_002"
+    },
+    {
+      "id": "B030",
+      "category": "Python",
+      "type": "conceptual",
+      "question": "What practical decision depends on understanding Python lists and tuples?",
+      "relevance": {
+        "seed_002": 2
+      },
+      "target_seed": "seed_002"
+    },
+    {
+      "id": "B031",
+      "category": "Python",
+      "type": "related",
+      "question": "How is Python lists and tuples related to good system or program design?",
+      "relevance": {
+        "seed_002": 2,
+        "seed_004": 1
+      },
+      "target_seed": "seed_002"
+    },
+    {
+      "id": "B032",
+      "category": "Python",
+      "type": "related",
+      "question": "What common mistake can happen when working with Python lists and tuples?",
+      "relevance": {
+        "seed_002": 2,
+        "seed_004": 1
+      },
+      "target_seed": "seed_002"
+    },
+    {
+      "id": "B033",
+      "category": "Python",
+      "type": "related",
+      "question": "How would you explain the benefit of Python lists and tuples to a beginner?",
+      "relevance": {
+        "seed_002": 2,
+        "seed_004": 1
+      },
+      "target_seed": "seed_002"
+    },
+    {
+      "id": "B034",
+      "category": "Python",
+      "type": "related",
+      "question": "When would choosing the right approach to Python lists and tuples matter?",
+      "relevance": {
+        "seed_002": 2,
+        "seed_004": 1
+      },
+      "target_seed": "seed_002"
+    },
+    {
+      "id": "B035",
+      "category": "Python",
+      "type": "related",
+      "question": "What should be considered before applying Python lists and tuples?",
+      "relevance": {
+        "seed_002": 2,
+        "seed_004": 1
+      },
+      "target_seed": "seed_002"
+    },
+    {
+      "id": "B036",
+      "category": "Python",
+      "type": "hard_negative",
+      "question": "How is seed_004 different from Python lists and tuples?",
+      "relevance": {
+        "seed_002": 2,
+        "seed_004": 0
+      },
+      "target_seed": "seed_002"
+    },
+    {
+      "id": "B037",
+      "category": "Python",
+      "type": "hard_negative",
+      "question": "Why should seed_004 not be confused with Python lists and tuples?",
+      "relevance": {
+        "seed_002": 2,
+        "seed_004": 0
+      },
+      "target_seed": "seed_002"
+    },
+    {
+      "id": "B038",
+      "category": "Python",
+      "type": "hard_negative",
+      "question": "Which is more directly relevant here: seed_004 or Python lists and tuples, and why?",
+      "relevance": {
+        "seed_002": 2,
+        "seed_004": 0
+      },
+      "target_seed": "seed_002"
+    },
+    {
+      "id": "B039",
+      "category": "Python",
+      "type": "cross_concept",
+      "question": "How could Python lists and tuples interact with seed_004 in a real application?",
+      "relevance": {
+        "seed_002": 2,
+        "seed_004": 1,
+        "seed_001": 1
+      },
+      "target_seed": "seed_002"
+    },
+    {
+      "id": "B040",
+      "category": "Python",
+      "type": "cross_concept",
+      "question": "How could knowledge of Python lists and tuples help when working with seed_001?",
+      "relevance": {
+        "seed_002": 2,
+        "seed_004": 1,
+        "seed_001": 1
+      },
+      "target_seed": "seed_002"
+    },
+    {
+      "id": "B041",
+      "category": "C++ DSA",
+      "type": "direct_or_paraphrase",
+      "question": "What is binary search time complexity?",
+      "relevance": {
+        "seed_003": 2
+      },
+      "target_seed": "seed_003"
+    },
+    {
+      "id": "B042",
+      "category": "C++ DSA",
+      "type": "direct_or_paraphrase",
+      "question": "Explain binary search time complexity.",
+      "relevance": {
+        "seed_003": 2
+      },
+      "target_seed": "seed_003"
+    },
+    {
+      "id": "B043",
+      "category": "C++ DSA",
+      "type": "direct_or_paraphrase",
+      "question": "How does binary search time complexity work?",
+      "relevance": {
+        "seed_003": 2
+      },
+      "target_seed": "seed_003"
+    },
+    {
+      "id": "B044",
+      "category": "C++ DSA",
+      "type": "direct_or_paraphrase",
+      "question": "Why is binary search time complexity important?",
+      "relevance": {
+        "seed_003": 2
+      },
+      "target_seed": "seed_003"
+    },
+    {
+      "id": "B045",
+      "category": "C++ DSA",
+      "type": "direct_or_paraphrase",
+      "question": "What is the main purpose of binary search time complexity?",
+      "relevance": {
+        "seed_003": 2
+      },
+      "target_seed": "seed_003"
+    },
+    {
+      "id": "B046",
+      "category": "C++ DSA",
+      "type": "conceptual",
+      "question": "Why would a developer need to understand binary search time complexity?",
+      "relevance": {
+        "seed_003": 2
+      },
+      "target_seed": "seed_003"
+    },
+    {
+      "id": "B047",
+      "category": "C++ DSA",
+      "type": "conceptual",
+      "question": "What problem does binary search time complexity solve?",
+      "relevance": {
+        "seed_003": 2
+      },
+      "target_seed": "seed_003"
+    },
+    {
+      "id": "B048",
+      "category": "C++ DSA",
+      "type": "conceptual",
+      "question": "What happens when binary search time complexity is used correctly?",
+      "relevance": {
+        "seed_003": 2
+      },
+      "target_seed": "seed_003"
+    },
+    {
+      "id": "B049",
+      "category": "C++ DSA",
+      "type": "conceptual",
+      "question": "What are the main ideas behind binary search time complexity?",
+      "relevance": {
+        "seed_003": 2
+      },
+      "target_seed": "seed_003"
+    },
+    {
+      "id": "B050",
+      "category": "C++ DSA",
+      "type": "conceptual",
+      "question": "What practical decision depends on understanding binary search time complexity?",
+      "relevance": {
+        "seed_003": 2
+      },
+      "target_seed": "seed_003"
+    },
+    {
+      "id": "B051",
+      "category": "C++ DSA",
+      "type": "related",
+      "question": "How is binary search time complexity related to good system or program design?",
+      "relevance": {
+        "seed_003": 2,
+        "seed_004": 1
+      },
+      "target_seed": "seed_003"
+    },
+    {
+      "id": "B052",
+      "category": "C++ DSA",
+      "type": "related",
+      "question": "What common mistake can happen when working with binary search time complexity?",
+      "relevance": {
+        "seed_003": 2,
+        "seed_004": 1
+      },
+      "target_seed": "seed_003"
+    },
+    {
+      "id": "B053",
+      "category": "C++ DSA",
+      "type": "related",
+      "question": "How would you explain the benefit of binary search time complexity to a beginner?",
+      "relevance": {
+        "seed_003": 2,
+        "seed_004": 1
+      },
+      "target_seed": "seed_003"
+    },
+    {
+      "id": "B054",
+      "category": "C++ DSA",
+      "type": "related",
+      "question": "When would choosing the right approach to binary search time complexity matter?",
+      "relevance": {
+        "seed_003": 2,
+        "seed_004": 1
+      },
+      "target_seed": "seed_003"
+    },
+    {
+      "id": "B055",
+      "category": "C++ DSA",
+      "type": "related",
+      "question": "What should be considered before applying binary search time complexity?",
+      "relevance": {
+        "seed_003": 2,
+        "seed_004": 1
+      },
+      "target_seed": "seed_003"
+    },
+    {
+      "id": "B056",
+      "category": "C++ DSA",
+      "type": "hard_negative",
+      "question": "How is seed_004 different from binary search time complexity?",
+      "relevance": {
+        "seed_003": 2,
+        "seed_004": 0
+      },
+      "target_seed": "seed_003"
+    },
+    {
+      "id": "B057",
+      "category": "C++ DSA",
+      "type": "hard_negative",
+      "question": "Why should seed_004 not be confused with binary search time complexity?",
+      "relevance": {
+        "seed_003": 2,
+        "seed_004": 0
+      },
+      "target_seed": "seed_003"
+    },
+    {
+      "id": "B058",
+      "category": "C++ DSA",
+      "type": "hard_negative",
+      "question": "Which is more directly relevant here: seed_004 or binary search time complexity, and why?",
+      "relevance": {
+        "seed_003": 2,
+        "seed_004": 0
+      },
+      "target_seed": "seed_003"
+    },
+    {
+      "id": "B059",
+      "category": "C++ DSA",
+      "type": "cross_concept",
+      "question": "How could binary search time complexity interact with seed_004 in a real application?",
+      "relevance": {
+        "seed_003": 2,
+        "seed_004": 1,
+        "seed_009": 1
+      },
+      "target_seed": "seed_003"
+    },
+    {
+      "id": "B060",
+      "category": "C++ DSA",
+      "type": "cross_concept",
+      "question": "How could knowledge of binary search time complexity help when working with seed_009?",
+      "relevance": {
+        "seed_003": 2,
+        "seed_004": 1,
+        "seed_009": 1
+      },
+      "target_seed": "seed_003"
+    },
+    {
+      "id": "B061",
+      "category": "C++ DSA",
+      "type": "direct_or_paraphrase",
+      "question": "What is stack versus queue?",
+      "relevance": {
+        "seed_004": 2
+      },
+      "target_seed": "seed_004"
+    },
+    {
+      "id": "B062",
+      "category": "C++ DSA",
+      "type": "direct_or_paraphrase",
+      "question": "Explain stack versus queue.",
+      "relevance": {
+        "seed_004": 2
+      },
+      "target_seed": "seed_004"
+    },
+    {
+      "id": "B063",
+      "category": "C++ DSA",
+      "type": "direct_or_paraphrase",
+      "question": "How does stack versus queue work?",
+      "relevance": {
+        "seed_004": 2
+      },
+      "target_seed": "seed_004"
+    },
+    {
+      "id": "B064",
+      "category": "C++ DSA",
+      "type": "direct_or_paraphrase",
+      "question": "Why is stack versus queue important?",
+      "relevance": {
+        "seed_004": 2
+      },
+      "target_seed": "seed_004"
+    },
+    {
+      "id": "B065",
+      "category": "C++ DSA",
+      "type": "direct_or_paraphrase",
+      "question": "What is the main purpose of stack versus queue?",
+      "relevance": {
+        "seed_004": 2
+      },
+      "target_seed": "seed_004"
+    },
+    {
+      "id": "B066",
+      "category": "C++ DSA",
+      "type": "conceptual",
+      "question": "Why would a developer need to understand stack versus queue?",
+      "relevance": {
+        "seed_004": 2
+      },
+      "target_seed": "seed_004"
+    },
+    {
+      "id": "B067",
+      "category": "C++ DSA",
+      "type": "conceptual",
+      "question": "What problem does stack versus queue solve?",
+      "relevance": {
+        "seed_004": 2
+      },
+      "target_seed": "seed_004"
+    },
+    {
+      "id": "B068",
+      "category": "C++ DSA",
+      "type": "conceptual",
+      "question": "What happens when stack versus queue is used correctly?",
+      "relevance": {
+        "seed_004": 2
+      },
+      "target_seed": "seed_004"
+    },
+    {
+      "id": "B069",
+      "category": "C++ DSA",
+      "type": "conceptual",
+      "question": "What are the main ideas behind stack versus queue?",
+      "relevance": {
+        "seed_004": 2
+      },
+      "target_seed": "seed_004"
+    },
+    {
+      "id": "B070",
+      "category": "C++ DSA",
+      "type": "conceptual",
+      "question": "What practical decision depends on understanding stack versus queue?",
+      "relevance": {
+        "seed_004": 2
+      },
+      "target_seed": "seed_004"
+    },
+    {
+      "id": "B071",
+      "category": "C++ DSA",
+      "type": "related",
+      "question": "How is stack versus queue related to good system or program design?",
+      "relevance": {
+        "seed_004": 2,
+        "seed_002": 1
+      },
+      "target_seed": "seed_004"
+    },
+    {
+      "id": "B072",
+      "category": "C++ DSA",
+      "type": "related",
+      "question": "What common mistake can happen when working with stack versus queue?",
+      "relevance": {
+        "seed_004": 2,
+        "seed_002": 1
+      },
+      "target_seed": "seed_004"
+    },
+    {
+      "id": "B073",
+      "category": "C++ DSA",
+      "type": "related",
+      "question": "How would you explain the benefit of stack versus queue to a beginner?",
+      "relevance": {
+        "seed_004": 2,
+        "seed_002": 1
+      },
+      "target_seed": "seed_004"
+    },
+    {
+      "id": "B074",
+      "category": "C++ DSA",
+      "type": "related",
+      "question": "When would choosing the right approach to stack versus queue matter?",
+      "relevance": {
+        "seed_004": 2,
+        "seed_002": 1
+      },
+      "target_seed": "seed_004"
+    },
+    {
+      "id": "B075",
+      "category": "C++ DSA",
+      "type": "related",
+      "question": "What should be considered before applying stack versus queue?",
+      "relevance": {
+        "seed_004": 2,
+        "seed_002": 1
+      },
+      "target_seed": "seed_004"
+    },
+    {
+      "id": "B076",
+      "category": "C++ DSA",
+      "type": "hard_negative",
+      "question": "How is seed_002 different from stack versus queue?",
+      "relevance": {
+        "seed_004": 2,
+        "seed_002": 0
+      },
+      "target_seed": "seed_004"
+    },
+    {
+      "id": "B077",
+      "category": "C++ DSA",
+      "type": "hard_negative",
+      "question": "Why should seed_002 not be confused with stack versus queue?",
+      "relevance": {
+        "seed_004": 2,
+        "seed_002": 0
+      },
+      "target_seed": "seed_004"
+    },
+    {
+      "id": "B078",
+      "category": "C++ DSA",
+      "type": "hard_negative",
+      "question": "Which is more directly relevant here: seed_002 or stack versus queue, and why?",
+      "relevance": {
+        "seed_004": 2,
+        "seed_002": 0
+      },
+      "target_seed": "seed_004"
+    },
+    {
+      "id": "B079",
+      "category": "C++ DSA",
+      "type": "cross_concept",
+      "question": "How could stack versus queue interact with seed_002 in a real application?",
+      "relevance": {
+        "seed_004": 2,
+        "seed_002": 1,
+        "seed_003": 1
+      },
+      "target_seed": "seed_004"
+    },
+    {
+      "id": "B080",
+      "category": "C++ DSA",
+      "type": "cross_concept",
+      "question": "How could knowledge of stack versus queue help when working with seed_003?",
+      "relevance": {
+        "seed_004": 2,
+        "seed_002": 1,
+        "seed_003": 1
+      },
+      "target_seed": "seed_004"
+    },
+    {
+      "id": "B081",
+      "category": "DBMS",
+      "type": "direct_or_paraphrase",
+      "question": "What is primary keys and foreign keys?",
+      "relevance": {
+        "seed_005": 2
+      },
+      "target_seed": "seed_005"
+    },
+    {
+      "id": "B082",
+      "category": "DBMS",
+      "type": "direct_or_paraphrase",
+      "question": "Explain primary keys and foreign keys.",
+      "relevance": {
+        "seed_005": 2
+      },
+      "target_seed": "seed_005"
+    },
+    {
+      "id": "B083",
+      "category": "DBMS",
+      "type": "direct_or_paraphrase",
+      "question": "How does primary keys and foreign keys work?",
+      "relevance": {
+        "seed_005": 2
+      },
+      "target_seed": "seed_005"
+    },
+    {
+      "id": "B084",
+      "category": "DBMS",
+      "type": "direct_or_paraphrase",
+      "question": "Why is primary keys and foreign keys important?",
+      "relevance": {
+        "seed_005": 2
+      },
+      "target_seed": "seed_005"
+    },
+    {
+      "id": "B085",
+      "category": "DBMS",
+      "type": "direct_or_paraphrase",
+      "question": "What is the main purpose of primary keys and foreign keys?",
+      "relevance": {
+        "seed_005": 2
+      },
+      "target_seed": "seed_005"
+    },
+    {
+      "id": "B086",
+      "category": "DBMS",
+      "type": "conceptual",
+      "question": "Why would a developer need to understand primary keys and foreign keys?",
+      "relevance": {
+        "seed_005": 2
+      },
+      "target_seed": "seed_005"
+    },
+    {
+      "id": "B087",
+      "category": "DBMS",
+      "type": "conceptual",
+      "question": "What problem does primary keys and foreign keys solve?",
+      "relevance": {
+        "seed_005": 2
+      },
+      "target_seed": "seed_005"
+    },
+    {
+      "id": "B088",
+      "category": "DBMS",
+      "type": "conceptual",
+      "question": "What happens when primary keys and foreign keys is used correctly?",
+      "relevance": {
+        "seed_005": 2
+      },
+      "target_seed": "seed_005"
+    },
+    {
+      "id": "B089",
+      "category": "DBMS",
+      "type": "conceptual",
+      "question": "What are the main ideas behind primary keys and foreign keys?",
+      "relevance": {
+        "seed_005": 2
+      },
+      "target_seed": "seed_005"
+    },
+    {
+      "id": "B090",
+      "category": "DBMS",
+      "type": "conceptual",
+      "question": "What practical decision depends on understanding primary keys and foreign keys?",
+      "relevance": {
+        "seed_005": 2
+      },
+      "target_seed": "seed_005"
+    },
+    {
+      "id": "B091",
+      "category": "DBMS",
+      "type": "related",
+      "question": "How is primary keys and foreign keys related to good system or program design?",
+      "relevance": {
+        "seed_005": 2,
+        "seed_006": 1
+      },
+      "target_seed": "seed_005"
+    },
+    {
+      "id": "B092",
+      "category": "DBMS",
+      "type": "related",
+      "question": "What common mistake can happen when working with primary keys and foreign keys?",
+      "relevance": {
+        "seed_005": 2,
+        "seed_006": 1
+      },
+      "target_seed": "seed_005"
+    },
+    {
+      "id": "B093",
+      "category": "DBMS",
+      "type": "related",
+      "question": "How would you explain the benefit of primary keys and foreign keys to a beginner?",
+      "relevance": {
+        "seed_005": 2,
+        "seed_006": 1
+      },
+      "target_seed": "seed_005"
+    },
+    {
+      "id": "B094",
+      "category": "DBMS",
+      "type": "related",
+      "question": "When would choosing the right approach to primary keys and foreign keys matter?",
+      "relevance": {
+        "seed_005": 2,
+        "seed_006": 1
+      },
+      "target_seed": "seed_005"
+    },
+    {
+      "id": "B095",
+      "category": "DBMS",
+      "type": "related",
+      "question": "What should be considered before applying primary keys and foreign keys?",
+      "relevance": {
+        "seed_005": 2,
+        "seed_006": 1
+      },
+      "target_seed": "seed_005"
+    },
+    {
+      "id": "B096",
+      "category": "DBMS",
+      "type": "hard_negative",
+      "question": "How is seed_006 different from primary keys and foreign keys?",
+      "relevance": {
+        "seed_005": 2,
+        "seed_006": 0
+      },
+      "target_seed": "seed_005"
+    },
+    {
+      "id": "B097",
+      "category": "DBMS",
+      "type": "hard_negative",
+      "question": "Why should seed_006 not be confused with primary keys and foreign keys?",
+      "relevance": {
+        "seed_005": 2,
+        "seed_006": 0
+      },
+      "target_seed": "seed_005"
+    },
+    {
+      "id": "B098",
+      "category": "DBMS",
+      "type": "hard_negative",
+      "question": "Which is more directly relevant here: seed_006 or primary keys and foreign keys, and why?",
+      "relevance": {
+        "seed_005": 2,
+        "seed_006": 0
+      },
+      "target_seed": "seed_005"
+    },
+    {
+      "id": "B099",
+      "category": "DBMS",
+      "type": "cross_concept",
+      "question": "How could primary keys and foreign keys interact with seed_006 in a real application?",
+      "relevance": {
+        "seed_005": 2,
+        "seed_006": 1,
+        "seed_007": 1
+      },
+      "target_seed": "seed_005"
+    },
+    {
+      "id": "B100",
+      "category": "DBMS",
+      "type": "cross_concept",
+      "question": "How could knowledge of primary keys and foreign keys help when working with seed_007?",
+      "relevance": {
+        "seed_005": 2,
+        "seed_006": 1,
+        "seed_007": 1
+      },
+      "target_seed": "seed_005"
+    },
+    {
+      "id": "B101",
+      "category": "DBMS",
+      "type": "direct_or_paraphrase",
+      "question": "What is database normalization?",
+      "relevance": {
+        "seed_006": 2
+      },
+      "target_seed": "seed_006"
+    },
+    {
+      "id": "B102",
+      "category": "DBMS",
+      "type": "direct_or_paraphrase",
+      "question": "Explain database normalization.",
+      "relevance": {
+        "seed_006": 2
+      },
+      "target_seed": "seed_006"
+    },
+    {
+      "id": "B103",
+      "category": "DBMS",
+      "type": "direct_or_paraphrase",
+      "question": "How does database normalization work?",
+      "relevance": {
+        "seed_006": 2
+      },
+      "target_seed": "seed_006"
+    },
+    {
+      "id": "B104",
+      "category": "DBMS",
+      "type": "direct_or_paraphrase",
+      "question": "Why is database normalization important?",
+      "relevance": {
+        "seed_006": 2
+      },
+      "target_seed": "seed_006"
+    },
+    {
+      "id": "B105",
+      "category": "DBMS",
+      "type": "direct_or_paraphrase",
+      "question": "What is the main purpose of database normalization?",
+      "relevance": {
+        "seed_006": 2
+      },
+      "target_seed": "seed_006"
+    },
+    {
+      "id": "B106",
+      "category": "DBMS",
+      "type": "conceptual",
+      "question": "Why would a developer need to understand database normalization?",
+      "relevance": {
+        "seed_006": 2
+      },
+      "target_seed": "seed_006"
+    },
+    {
+      "id": "B107",
+      "category": "DBMS",
+      "type": "conceptual",
+      "question": "What problem does database normalization solve?",
+      "relevance": {
+        "seed_006": 2
+      },
+      "target_seed": "seed_006"
+    },
+    {
+      "id": "B108",
+      "category": "DBMS",
+      "type": "conceptual",
+      "question": "What happens when database normalization is used correctly?",
+      "relevance": {
+        "seed_006": 2
+      },
+      "target_seed": "seed_006"
+    },
+    {
+      "id": "B109",
+      "category": "DBMS",
+      "type": "conceptual",
+      "question": "What are the main ideas behind database normalization?",
+      "relevance": {
+        "seed_006": 2
+      },
+      "target_seed": "seed_006"
+    },
+    {
+      "id": "B110",
+      "category": "DBMS",
+      "type": "conceptual",
+      "question": "What practical decision depends on understanding database normalization?",
+      "relevance": {
+        "seed_006": 2
+      },
+      "target_seed": "seed_006"
+    },
+    {
+      "id": "B111",
+      "category": "DBMS",
+      "type": "related",
+      "question": "How is database normalization related to good system or program design?",
+      "relevance": {
+        "seed_006": 2,
+        "seed_005": 1
+      },
+      "target_seed": "seed_006"
+    },
+    {
+      "id": "B112",
+      "category": "DBMS",
+      "type": "related",
+      "question": "What common mistake can happen when working with database normalization?",
+      "relevance": {
+        "seed_006": 2,
+        "seed_005": 1
+      },
+      "target_seed": "seed_006"
+    },
+    {
+      "id": "B113",
+      "category": "DBMS",
+      "type": "related",
+      "question": "How would you explain the benefit of database normalization to a beginner?",
+      "relevance": {
+        "seed_006": 2,
+        "seed_005": 1
+      },
+      "target_seed": "seed_006"
+    },
+    {
+      "id": "B114",
+      "category": "DBMS",
+      "type": "related",
+      "question": "When would choosing the right approach to database normalization matter?",
+      "relevance": {
+        "seed_006": 2,
+        "seed_005": 1
+      },
+      "target_seed": "seed_006"
+    },
+    {
+      "id": "B115",
+      "category": "DBMS",
+      "type": "related",
+      "question": "What should be considered before applying database normalization?",
+      "relevance": {
+        "seed_006": 2,
+        "seed_005": 1
+      },
+      "target_seed": "seed_006"
+    },
+    {
+      "id": "B116",
+      "category": "DBMS",
+      "type": "hard_negative",
+      "question": "How is seed_005 different from database normalization?",
+      "relevance": {
+        "seed_006": 2,
+        "seed_005": 0
+      },
+      "target_seed": "seed_006"
+    },
+    {
+      "id": "B117",
+      "category": "DBMS",
+      "type": "hard_negative",
+      "question": "Why should seed_005 not be confused with database normalization?",
+      "relevance": {
+        "seed_006": 2,
+        "seed_005": 0
+      },
+      "target_seed": "seed_006"
+    },
+    {
+      "id": "B118",
+      "category": "DBMS",
+      "type": "hard_negative",
+      "question": "Which is more directly relevant here: seed_005 or database normalization, and why?",
+      "relevance": {
+        "seed_006": 2,
+        "seed_005": 0
+      },
+      "target_seed": "seed_006"
+    },
+    {
+      "id": "B119",
+      "category": "DBMS",
+      "type": "cross_concept",
+      "question": "How could database normalization interact with seed_005 in a real application?",
+      "relevance": {
+        "seed_006": 2,
+        "seed_005": 1,
+        "seed_007": 1
+      },
+      "target_seed": "seed_006"
+    },
+    {
+      "id": "B120",
+      "category": "DBMS",
+      "type": "cross_concept",
+      "question": "How could knowledge of database normalization help when working with seed_007?",
+      "relevance": {
+        "seed_006": 2,
+        "seed_005": 1,
+        "seed_007": 1
+      },
+      "target_seed": "seed_006"
+    },
+    {
+      "id": "B121",
+      "category": "SQL",
+      "type": "direct_or_paraphrase",
+      "question": "What is INNER JOIN?",
+      "relevance": {
+        "seed_007": 2
+      },
+      "target_seed": "seed_007"
+    },
+    {
+      "id": "B122",
+      "category": "SQL",
+      "type": "direct_or_paraphrase",
+      "question": "Explain INNER JOIN.",
+      "relevance": {
+        "seed_007": 2
+      },
+      "target_seed": "seed_007"
+    },
+    {
+      "id": "B123",
+      "category": "SQL",
+      "type": "direct_or_paraphrase",
+      "question": "How does INNER JOIN work?",
+      "relevance": {
+        "seed_007": 2
+      },
+      "target_seed": "seed_007"
+    },
+    {
+      "id": "B124",
+      "category": "SQL",
+      "type": "direct_or_paraphrase",
+      "question": "Why is INNER JOIN important?",
+      "relevance": {
+        "seed_007": 2
+      },
+      "target_seed": "seed_007"
+    },
+    {
+      "id": "B125",
+      "category": "SQL",
+      "type": "direct_or_paraphrase",
+      "question": "What is the main purpose of INNER JOIN?",
+      "relevance": {
+        "seed_007": 2
+      },
+      "target_seed": "seed_007"
+    },
+    {
+      "id": "B126",
+      "category": "SQL",
+      "type": "conceptual",
+      "question": "Why would a developer need to understand INNER JOIN?",
+      "relevance": {
+        "seed_007": 2
+      },
+      "target_seed": "seed_007"
+    },
+    {
+      "id": "B127",
+      "category": "SQL",
+      "type": "conceptual",
+      "question": "What problem does INNER JOIN solve?",
+      "relevance": {
+        "seed_007": 2
+      },
+      "target_seed": "seed_007"
+    },
+    {
+      "id": "B128",
+      "category": "SQL",
+      "type": "conceptual",
+      "question": "What happens when INNER JOIN is used correctly?",
+      "relevance": {
+        "seed_007": 2
+      },
+      "target_seed": "seed_007"
+    },
+    {
+      "id": "B129",
+      "category": "SQL",
+      "type": "conceptual",
+      "question": "What are the main ideas behind INNER JOIN?",
+      "relevance": {
+        "seed_007": 2
+      },
+      "target_seed": "seed_007"
+    },
+    {
+      "id": "B130",
+      "category": "SQL",
+      "type": "conceptual",
+      "question": "What practical decision depends on understanding INNER JOIN?",
+      "relevance": {
+        "seed_007": 2
+      },
+      "target_seed": "seed_007"
+    },
+    {
+      "id": "B131",
+      "category": "SQL",
+      "type": "related",
+      "question": "How is INNER JOIN related to good system or program design?",
+      "relevance": {
+        "seed_007": 2,
+        "seed_005": 1
+      },
+      "target_seed": "seed_007"
+    },
+    {
+      "id": "B132",
+      "category": "SQL",
+      "type": "related",
+      "question": "What common mistake can happen when working with INNER JOIN?",
+      "relevance": {
+        "seed_007": 2,
+        "seed_005": 1
+      },
+      "target_seed": "seed_007"
+    },
+    {
+      "id": "B133",
+      "category": "SQL",
+      "type": "related",
+      "question": "How would you explain the benefit of INNER JOIN to a beginner?",
+      "relevance": {
+        "seed_007": 2,
+        "seed_005": 1
+      },
+      "target_seed": "seed_007"
+    },
+    {
+      "id": "B134",
+      "category": "SQL",
+      "type": "related",
+      "question": "When would choosing the right approach to INNER JOIN matter?",
+      "relevance": {
+        "seed_007": 2,
+        "seed_005": 1
+      },
+      "target_seed": "seed_007"
+    },
+    {
+      "id": "B135",
+      "category": "SQL",
+      "type": "related",
+      "question": "What should be considered before applying INNER JOIN?",
+      "relevance": {
+        "seed_007": 2,
+        "seed_005": 1
+      },
+      "target_seed": "seed_007"
+    },
+    {
+      "id": "B136",
+      "category": "SQL",
+      "type": "hard_negative",
+      "question": "How is seed_005 different from INNER JOIN?",
+      "relevance": {
+        "seed_007": 2,
+        "seed_005": 0
+      },
+      "target_seed": "seed_007"
+    },
+    {
+      "id": "B137",
+      "category": "SQL",
+      "type": "hard_negative",
+      "question": "Why should seed_005 not be confused with INNER JOIN?",
+      "relevance": {
+        "seed_007": 2,
+        "seed_005": 0
+      },
+      "target_seed": "seed_007"
+    },
+    {
+      "id": "B138",
+      "category": "SQL",
+      "type": "hard_negative",
+      "question": "Which is more directly relevant here: seed_005 or INNER JOIN, and why?",
+      "relevance": {
+        "seed_007": 2,
+        "seed_005": 0
+      },
+      "target_seed": "seed_007"
+    },
+    {
+      "id": "B139",
+      "category": "SQL",
+      "type": "cross_concept",
+      "question": "How could INNER JOIN interact with seed_005 in a real application?",
+      "relevance": {
+        "seed_007": 2,
+        "seed_005": 1,
+        "seed_006": 1
+      },
+      "target_seed": "seed_007"
+    },
+    {
+      "id": "B140",
+      "category": "SQL",
+      "type": "cross_concept",
+      "question": "How could knowledge of INNER JOIN help when working with seed_006?",
+      "relevance": {
+        "seed_007": 2,
+        "seed_005": 1,
+        "seed_006": 1
+      },
+      "target_seed": "seed_007"
+    },
+    {
+      "id": "B141",
+      "category": "Cloud",
+      "type": "direct_or_paraphrase",
+      "question": "What is public, private, and hybrid cloud?",
+      "relevance": {
+        "seed_008": 2
+      },
+      "target_seed": "seed_008"
+    },
+    {
+      "id": "B142",
+      "category": "Cloud",
+      "type": "direct_or_paraphrase",
+      "question": "Explain public, private, and hybrid cloud.",
+      "relevance": {
+        "seed_008": 2
+      },
+      "target_seed": "seed_008"
+    },
+    {
+      "id": "B143",
+      "category": "Cloud",
+      "type": "direct_or_paraphrase",
+      "question": "How does public, private, and hybrid cloud work?",
+      "relevance": {
+        "seed_008": 2
+      },
+      "target_seed": "seed_008"
+    },
+    {
+      "id": "B144",
+      "category": "Cloud",
+      "type": "direct_or_paraphrase",
+      "question": "Why is public, private, and hybrid cloud important?",
+      "relevance": {
+        "seed_008": 2
+      },
+      "target_seed": "seed_008"
+    },
+    {
+      "id": "B145",
+      "category": "Cloud",
+      "type": "direct_or_paraphrase",
+      "question": "What is the main purpose of public, private, and hybrid cloud?",
+      "relevance": {
+        "seed_008": 2
+      },
+      "target_seed": "seed_008"
+    },
+    {
+      "id": "B146",
+      "category": "Cloud",
+      "type": "conceptual",
+      "question": "Why would a developer need to understand public, private, and hybrid cloud?",
+      "relevance": {
+        "seed_008": 2
+      },
+      "target_seed": "seed_008"
+    },
+    {
+      "id": "B147",
+      "category": "Cloud",
+      "type": "conceptual",
+      "question": "What problem does public, private, and hybrid cloud solve?",
+      "relevance": {
+        "seed_008": 2
+      },
+      "target_seed": "seed_008"
+    },
+    {
+      "id": "B148",
+      "category": "Cloud",
+      "type": "conceptual",
+      "question": "What happens when public, private, and hybrid cloud is used correctly?",
+      "relevance": {
+        "seed_008": 2
+      },
+      "target_seed": "seed_008"
+    },
+    {
+      "id": "B149",
+      "category": "Cloud",
+      "type": "conceptual",
+      "question": "What are the main ideas behind public, private, and hybrid cloud?",
+      "relevance": {
+        "seed_008": 2
+      },
+      "target_seed": "seed_008"
+    },
+    {
+      "id": "B150",
+      "category": "Cloud",
+      "type": "conceptual",
+      "question": "What practical decision depends on understanding public, private, and hybrid cloud?",
+      "relevance": {
+        "seed_008": 2
+      },
+      "target_seed": "seed_008"
+    },
+    {
+      "id": "B151",
+      "category": "Cloud",
+      "type": "related",
+      "question": "How is public, private, and hybrid cloud related to good system or program design?",
+      "relevance": {
+        "seed_008": 2,
+        "seed_005": 1
+      },
+      "target_seed": "seed_008"
+    },
+    {
+      "id": "B152",
+      "category": "Cloud",
+      "type": "related",
+      "question": "What common mistake can happen when working with public, private, and hybrid cloud?",
+      "relevance": {
+        "seed_008": 2,
+        "seed_005": 1
+      },
+      "target_seed": "seed_008"
+    },
+    {
+      "id": "B153",
+      "category": "Cloud",
+      "type": "related",
+      "question": "How would you explain the benefit of public, private, and hybrid cloud to a beginner?",
+      "relevance": {
+        "seed_008": 2,
+        "seed_005": 1
+      },
+      "target_seed": "seed_008"
+    },
+    {
+      "id": "B154",
+      "category": "Cloud",
+      "type": "related",
+      "question": "When would choosing the right approach to public, private, and hybrid cloud matter?",
+      "relevance": {
+        "seed_008": 2,
+        "seed_005": 1
+      },
+      "target_seed": "seed_008"
+    },
+    {
+      "id": "B155",
+      "category": "Cloud",
+      "type": "related",
+      "question": "What should be considered before applying public, private, and hybrid cloud?",
+      "relevance": {
+        "seed_008": 2,
+        "seed_005": 1
+      },
+      "target_seed": "seed_008"
+    },
+    {
+      "id": "B156",
+      "category": "Cloud",
+      "type": "hard_negative",
+      "question": "How is seed_005 different from public, private, and hybrid cloud?",
+      "relevance": {
+        "seed_008": 2,
+        "seed_005": 0
+      },
+      "target_seed": "seed_008"
+    },
+    {
+      "id": "B157",
+      "category": "Cloud",
+      "type": "hard_negative",
+      "question": "Why should seed_005 not be confused with public, private, and hybrid cloud?",
+      "relevance": {
+        "seed_008": 2,
+        "seed_005": 0
+      },
+      "target_seed": "seed_008"
+    },
+    {
+      "id": "B158",
+      "category": "Cloud",
+      "type": "hard_negative",
+      "question": "Which is more directly relevant here: seed_005 or public, private, and hybrid cloud, and why?",
+      "relevance": {
+        "seed_008": 2,
+        "seed_005": 0
+      },
+      "target_seed": "seed_008"
+    },
+    {
+      "id": "B159",
+      "category": "Cloud",
+      "type": "cross_concept",
+      "question": "How could public, private, and hybrid cloud interact with seed_005 in a real application?",
+      "relevance": {
+        "seed_008": 2,
+        "seed_005": 1,
+        "seed_007": 1
+      },
+      "target_seed": "seed_008"
+    },
+    {
+      "id": "B160",
+      "category": "Cloud",
+      "type": "cross_concept",
+      "question": "How could knowledge of public, private, and hybrid cloud help when working with seed_007?",
+      "relevance": {
+        "seed_008": 2,
+        "seed_005": 1,
+        "seed_007": 1
+      },
+      "target_seed": "seed_008"
+    },
+    {
+      "id": "B161",
+      "category": "Machine Learning",
+      "type": "direct_or_paraphrase",
+      "question": "What is overfitting?",
+      "relevance": {
+        "seed_009": 2
+      },
+      "target_seed": "seed_009"
+    },
+    {
+      "id": "B162",
+      "category": "Machine Learning",
+      "type": "direct_or_paraphrase",
+      "question": "Explain overfitting.",
+      "relevance": {
+        "seed_009": 2
+      },
+      "target_seed": "seed_009"
+    },
+    {
+      "id": "B163",
+      "category": "Machine Learning",
+      "type": "direct_or_paraphrase",
+      "question": "How does overfitting work?",
+      "relevance": {
+        "seed_009": 2
+      },
+      "target_seed": "seed_009"
+    },
+    {
+      "id": "B164",
+      "category": "Machine Learning",
+      "type": "direct_or_paraphrase",
+      "question": "Why is overfitting important?",
+      "relevance": {
+        "seed_009": 2
+      },
+      "target_seed": "seed_009"
+    },
+    {
+      "id": "B165",
+      "category": "Machine Learning",
+      "type": "direct_or_paraphrase",
+      "question": "What is the main purpose of overfitting?",
+      "relevance": {
+        "seed_009": 2
+      },
+      "target_seed": "seed_009"
+    },
+    {
+      "id": "B166",
+      "category": "Machine Learning",
+      "type": "conceptual",
+      "question": "Why would a developer need to understand overfitting?",
+      "relevance": {
+        "seed_009": 2
+      },
+      "target_seed": "seed_009"
+    },
+    {
+      "id": "B167",
+      "category": "Machine Learning",
+      "type": "conceptual",
+      "question": "What problem does overfitting solve?",
+      "relevance": {
+        "seed_009": 2
+      },
+      "target_seed": "seed_009"
+    },
+    {
+      "id": "B168",
+      "category": "Machine Learning",
+      "type": "conceptual",
+      "question": "What happens when overfitting is used correctly?",
+      "relevance": {
+        "seed_009": 2
+      },
+      "target_seed": "seed_009"
+    },
+    {
+      "id": "B169",
+      "category": "Machine Learning",
+      "type": "conceptual",
+      "question": "What are the main ideas behind overfitting?",
+      "relevance": {
+        "seed_009": 2
+      },
+      "target_seed": "seed_009"
+    },
+    {
+      "id": "B170",
+      "category": "Machine Learning",
+      "type": "conceptual",
+      "question": "What practical decision depends on understanding overfitting?",
+      "relevance": {
+        "seed_009": 2
+      },
+      "target_seed": "seed_009"
+    },
+    {
+      "id": "B171",
+      "category": "Machine Learning",
+      "type": "related",
+      "question": "How is overfitting related to good system or program design?",
+      "relevance": {
+        "seed_009": 2,
+        "seed_010": 1
+      },
+      "target_seed": "seed_009"
+    },
+    {
+      "id": "B172",
+      "category": "Machine Learning",
+      "type": "related",
+      "question": "What common mistake can happen when working with overfitting?",
+      "relevance": {
+        "seed_009": 2,
+        "seed_010": 1
+      },
+      "target_seed": "seed_009"
+    },
+    {
+      "id": "B173",
+      "category": "Machine Learning",
+      "type": "related",
+      "question": "How would you explain the benefit of overfitting to a beginner?",
+      "relevance": {
+        "seed_009": 2,
+        "seed_010": 1
+      },
+      "target_seed": "seed_009"
+    },
+    {
+      "id": "B174",
+      "category": "Machine Learning",
+      "type": "related",
+      "question": "When would choosing the right approach to overfitting matter?",
+      "relevance": {
+        "seed_009": 2,
+        "seed_010": 1
+      },
+      "target_seed": "seed_009"
+    },
+    {
+      "id": "B175",
+      "category": "Machine Learning",
+      "type": "related",
+      "question": "What should be considered before applying overfitting?",
+      "relevance": {
+        "seed_009": 2,
+        "seed_010": 1
+      },
+      "target_seed": "seed_009"
+    },
+    {
+      "id": "B176",
+      "category": "Machine Learning",
+      "type": "hard_negative",
+      "question": "How is seed_010 different from overfitting?",
+      "relevance": {
+        "seed_009": 2,
+        "seed_010": 0
+      },
+      "target_seed": "seed_009"
+    },
+    {
+      "id": "B177",
+      "category": "Machine Learning",
+      "type": "hard_negative",
+      "question": "Why should seed_010 not be confused with overfitting?",
+      "relevance": {
+        "seed_009": 2,
+        "seed_010": 0
+      },
+      "target_seed": "seed_009"
+    },
+    {
+      "id": "B178",
+      "category": "Machine Learning",
+      "type": "hard_negative",
+      "question": "Which is more directly relevant here: seed_010 or overfitting, and why?",
+      "relevance": {
+        "seed_009": 2,
+        "seed_010": 0
+      },
+      "target_seed": "seed_009"
+    },
+    {
+      "id": "B179",
+      "category": "Machine Learning",
+      "type": "cross_concept",
+      "question": "How could overfitting interact with seed_010 in a real application?",
+      "relevance": {
+        "seed_009": 2,
+        "seed_010": 1,
+        "seed_006": 1
+      },
+      "target_seed": "seed_009"
+    },
+    {
+      "id": "B180",
+      "category": "Machine Learning",
+      "type": "cross_concept",
+      "question": "How could knowledge of overfitting help when working with seed_006?",
+      "relevance": {
+        "seed_009": 2,
+        "seed_010": 1,
+        "seed_006": 1
+      },
+      "target_seed": "seed_009"
+    },
+    {
+      "id": "B181",
+      "category": "Machine Learning",
+      "type": "direct_or_paraphrase",
+      "question": "What is Gini impurity in decision trees?",
+      "relevance": {
+        "seed_010": 2
+      },
+      "target_seed": "seed_010"
+    },
+    {
+      "id": "B182",
+      "category": "Machine Learning",
+      "type": "direct_or_paraphrase",
+      "question": "Explain Gini impurity in decision trees.",
+      "relevance": {
+        "seed_010": 2
+      },
+      "target_seed": "seed_010"
+    },
+    {
+      "id": "B183",
+      "category": "Machine Learning",
+      "type": "direct_or_paraphrase",
+      "question": "How does Gini impurity in decision trees work?",
+      "relevance": {
+        "seed_010": 2
+      },
+      "target_seed": "seed_010"
+    },
+    {
+      "id": "B184",
+      "category": "Machine Learning",
+      "type": "direct_or_paraphrase",
+      "question": "Why is Gini impurity in decision trees important?",
+      "relevance": {
+        "seed_010": 2
+      },
+      "target_seed": "seed_010"
+    },
+    {
+      "id": "B185",
+      "category": "Machine Learning",
+      "type": "direct_or_paraphrase",
+      "question": "What is the main purpose of Gini impurity in decision trees?",
+      "relevance": {
+        "seed_010": 2
+      },
+      "target_seed": "seed_010"
+    },
+    {
+      "id": "B186",
+      "category": "Machine Learning",
+      "type": "conceptual",
+      "question": "Why would a developer need to understand Gini impurity in decision trees?",
+      "relevance": {
+        "seed_010": 2
+      },
+      "target_seed": "seed_010"
+    },
+    {
+      "id": "B187",
+      "category": "Machine Learning",
+      "type": "conceptual",
+      "question": "What problem does Gini impurity in decision trees solve?",
+      "relevance": {
+        "seed_010": 2
+      },
+      "target_seed": "seed_010"
+    },
+    {
+      "id": "B188",
+      "category": "Machine Learning",
+      "type": "conceptual",
+      "question": "What happens when Gini impurity in decision trees is used correctly?",
+      "relevance": {
+        "seed_010": 2
+      },
+      "target_seed": "seed_010"
+    },
+    {
+      "id": "B189",
+      "category": "Machine Learning",
+      "type": "conceptual",
+      "question": "What are the main ideas behind Gini impurity in decision trees?",
+      "relevance": {
+        "seed_010": 2
+      },
+      "target_seed": "seed_010"
+    },
+    {
+      "id": "B190",
+      "category": "Machine Learning",
+      "type": "conceptual",
+      "question": "What practical decision depends on understanding Gini impurity in decision trees?",
+      "relevance": {
+        "seed_010": 2
+      },
+      "target_seed": "seed_010"
+    },
+    {
+      "id": "B191",
+      "category": "Machine Learning",
+      "type": "related",
+      "question": "How is Gini impurity in decision trees related to good system or program design?",
+      "relevance": {
+        "seed_010": 2,
+        "seed_009": 1
+      },
+      "target_seed": "seed_010"
+    },
+    {
+      "id": "B192",
+      "category": "Machine Learning",
+      "type": "related",
+      "question": "What common mistake can happen when working with Gini impurity in decision trees?",
+      "relevance": {
+        "seed_010": 2,
+        "seed_009": 1
+      },
+      "target_seed": "seed_010"
+    },
+    {
+      "id": "B193",
+      "category": "Machine Learning",
+      "type": "related",
+      "question": "How would you explain the benefit of Gini impurity in decision trees to a beginner?",
+      "relevance": {
+        "seed_010": 2,
+        "seed_009": 1
+      },
+      "target_seed": "seed_010"
+    },
+    {
+      "id": "B194",
+      "category": "Machine Learning",
+      "type": "related",
+      "question": "When would choosing the right approach to Gini impurity in decision trees matter?",
+      "relevance": {
+        "seed_010": 2,
+        "seed_009": 1
+      },
+      "target_seed": "seed_010"
+    },
+    {
+      "id": "B195",
+      "category": "Machine Learning",
+      "type": "related",
+      "question": "What should be considered before applying Gini impurity in decision trees?",
+      "relevance": {
+        "seed_010": 2,
+        "seed_009": 1
+      },
+      "target_seed": "seed_010"
+    },
+    {
+      "id": "B196",
+      "category": "Machine Learning",
+      "type": "hard_negative",
+      "question": "How is seed_009 different from Gini impurity in decision trees?",
+      "relevance": {
+        "seed_010": 2,
+        "seed_009": 0
+      },
+      "target_seed": "seed_010"
+    },
+    {
+      "id": "B197",
+      "category": "Machine Learning",
+      "type": "hard_negative",
+      "question": "Why should seed_009 not be confused with Gini impurity in decision trees?",
+      "relevance": {
+        "seed_010": 2,
+        "seed_009": 0
+      },
+      "target_seed": "seed_010"
+    },
+    {
+      "id": "B198",
+      "category": "Machine Learning",
+      "type": "hard_negative",
+      "question": "Which is more directly relevant here: seed_009 or Gini impurity in decision trees, and why?",
+      "relevance": {
+        "seed_010": 2,
+        "seed_009": 0
+      },
+      "target_seed": "seed_010"
+    },
+    {
+      "id": "B199",
+      "category": "Machine Learning",
+      "type": "cross_concept",
+      "question": "How could Gini impurity in decision trees interact with seed_009 in a real application?",
+      "relevance": {
+        "seed_010": 2,
+        "seed_009": 1,
+        "seed_003": 1
+      },
+      "target_seed": "seed_010"
+    },
+    {
+      "id": "B200",
+      "category": "Machine Learning",
+      "type": "cross_concept",
+      "question": "How could knowledge of Gini impurity in decision trees help when working with seed_003?",
+      "relevance": {
+        "seed_010": 2,
+        "seed_009": 1,
+        "seed_003": 1
+      },
+      "target_seed": "seed_010"
+    },
+    {
+      "id": "B201",
+      "category": "RAG",
+      "type": "direct_or_paraphrase",
+      "question": "What is retrieval-augmented generation?",
+      "relevance": {
+        "seed_011": 2
+      },
+      "target_seed": "seed_011"
+    },
+    {
+      "id": "B202",
+      "category": "RAG",
+      "type": "direct_or_paraphrase",
+      "question": "Explain retrieval-augmented generation.",
+      "relevance": {
+        "seed_011": 2
+      },
+      "target_seed": "seed_011"
+    },
+    {
+      "id": "B203",
+      "category": "RAG",
+      "type": "direct_or_paraphrase",
+      "question": "How does retrieval-augmented generation work?",
+      "relevance": {
+        "seed_011": 2
+      },
+      "target_seed": "seed_011"
+    },
+    {
+      "id": "B204",
+      "category": "RAG",
+      "type": "direct_or_paraphrase",
+      "question": "Why is retrieval-augmented generation important?",
+      "relevance": {
+        "seed_011": 2
+      },
+      "target_seed": "seed_011"
+    },
+    {
+      "id": "B205",
+      "category": "RAG",
+      "type": "direct_or_paraphrase",
+      "question": "What is the main purpose of retrieval-augmented generation?",
+      "relevance": {
+        "seed_011": 2
+      },
+      "target_seed": "seed_011"
+    },
+    {
+      "id": "B206",
+      "category": "RAG",
+      "type": "conceptual",
+      "question": "Why would a developer need to understand retrieval-augmented generation?",
+      "relevance": {
+        "seed_011": 2
+      },
+      "target_seed": "seed_011"
+    },
+    {
+      "id": "B207",
+      "category": "RAG",
+      "type": "conceptual",
+      "question": "What problem does retrieval-augmented generation solve?",
+      "relevance": {
+        "seed_011": 2
+      },
+      "target_seed": "seed_011"
+    },
+    {
+      "id": "B208",
+      "category": "RAG",
+      "type": "conceptual",
+      "question": "What happens when retrieval-augmented generation is used correctly?",
+      "relevance": {
+        "seed_011": 2
+      },
+      "target_seed": "seed_011"
+    },
+    {
+      "id": "B209",
+      "category": "RAG",
+      "type": "conceptual",
+      "question": "What are the main ideas behind retrieval-augmented generation?",
+      "relevance": {
+        "seed_011": 2
+      },
+      "target_seed": "seed_011"
+    },
+    {
+      "id": "B210",
+      "category": "RAG",
+      "type": "conceptual",
+      "question": "What practical decision depends on understanding retrieval-augmented generation?",
+      "relevance": {
+        "seed_011": 2
+      },
+      "target_seed": "seed_011"
+    },
+    {
+      "id": "B211",
+      "category": "RAG",
+      "type": "related",
+      "question": "How is retrieval-augmented generation related to good system or program design?",
+      "relevance": {
+        "seed_011": 2,
+        "seed_012": 1
+      },
+      "target_seed": "seed_011"
+    },
+    {
+      "id": "B212",
+      "category": "RAG",
+      "type": "related",
+      "question": "What common mistake can happen when working with retrieval-augmented generation?",
+      "relevance": {
+        "seed_011": 2,
+        "seed_012": 1
+      },
+      "target_seed": "seed_011"
+    },
+    {
+      "id": "B213",
+      "category": "RAG",
+      "type": "related",
+      "question": "How would you explain the benefit of retrieval-augmented generation to a beginner?",
+      "relevance": {
+        "seed_011": 2,
+        "seed_012": 1
+      },
+      "target_seed": "seed_011"
+    },
+    {
+      "id": "B214",
+      "category": "RAG",
+      "type": "related",
+      "question": "When would choosing the right approach to retrieval-augmented generation matter?",
+      "relevance": {
+        "seed_011": 2,
+        "seed_012": 1
+      },
+      "target_seed": "seed_011"
+    },
+    {
+      "id": "B215",
+      "category": "RAG",
+      "type": "related",
+      "question": "What should be considered before applying retrieval-augmented generation?",
+      "relevance": {
+        "seed_011": 2,
+        "seed_012": 1
+      },
+      "target_seed": "seed_011"
+    },
+    {
+      "id": "B216",
+      "category": "RAG",
+      "type": "hard_negative",
+      "question": "How is seed_012 different from retrieval-augmented generation?",
+      "relevance": {
+        "seed_011": 2,
+        "seed_012": 0
+      },
+      "target_seed": "seed_011"
+    },
+    {
+      "id": "B217",
+      "category": "RAG",
+      "type": "hard_negative",
+      "question": "Why should seed_012 not be confused with retrieval-augmented generation?",
+      "relevance": {
+        "seed_011": 2,
+        "seed_012": 0
+      },
+      "target_seed": "seed_011"
+    },
+    {
+      "id": "B218",
+      "category": "RAG",
+      "type": "hard_negative",
+      "question": "Which is more directly relevant here: seed_012 or retrieval-augmented generation, and why?",
+      "relevance": {
+        "seed_011": 2,
+        "seed_012": 0
+      },
+      "target_seed": "seed_011"
+    },
+    {
+      "id": "B219",
+      "category": "RAG",
+      "type": "cross_concept",
+      "question": "How could retrieval-augmented generation interact with seed_012 in a real application?",
+      "relevance": {
+        "seed_011": 2,
+        "seed_012": 1,
+        "seed_007": 1
+      },
+      "target_seed": "seed_011"
+    },
+    {
+      "id": "B220",
+      "category": "RAG",
+      "type": "cross_concept",
+      "question": "How could knowledge of retrieval-augmented generation help when working with seed_007?",
+      "relevance": {
+        "seed_011": 2,
+        "seed_012": 1,
+        "seed_007": 1
+      },
+      "target_seed": "seed_011"
+    },
+    {
+      "id": "B221",
+      "category": "AI Agents",
+      "type": "direct_or_paraphrase",
+      "question": "What is agent memory?",
+      "relevance": {
+        "seed_012": 2
+      },
+      "target_seed": "seed_012"
+    },
+    {
+      "id": "B222",
+      "category": "AI Agents",
+      "type": "direct_or_paraphrase",
+      "question": "Explain agent memory.",
+      "relevance": {
+        "seed_012": 2
+      },
+      "target_seed": "seed_012"
+    },
+    {
+      "id": "B223",
+      "category": "AI Agents",
+      "type": "direct_or_paraphrase",
+      "question": "How does agent memory work?",
+      "relevance": {
+        "seed_012": 2
+      },
+      "target_seed": "seed_012"
+    },
+    {
+      "id": "B224",
+      "category": "AI Agents",
+      "type": "direct_or_paraphrase",
+      "question": "Why is agent memory important?",
+      "relevance": {
+        "seed_012": 2
+      },
+      "target_seed": "seed_012"
+    },
+    {
+      "id": "B225",
+      "category": "AI Agents",
+      "type": "direct_or_paraphrase",
+      "question": "What is the main purpose of agent memory?",
+      "relevance": {
+        "seed_012": 2
+      },
+      "target_seed": "seed_012"
+    },
+    {
+      "id": "B226",
+      "category": "AI Agents",
+      "type": "conceptual",
+      "question": "Why would a developer need to understand agent memory?",
+      "relevance": {
+        "seed_012": 2
+      },
+      "target_seed": "seed_012"
+    },
+    {
+      "id": "B227",
+      "category": "AI Agents",
+      "type": "conceptual",
+      "question": "What problem does agent memory solve?",
+      "relevance": {
+        "seed_012": 2
+      },
+      "target_seed": "seed_012"
+    },
+    {
+      "id": "B228",
+      "category": "AI Agents",
+      "type": "conceptual",
+      "question": "What happens when agent memory is used correctly?",
+      "relevance": {
+        "seed_012": 2
+      },
+      "target_seed": "seed_012"
+    },
+    {
+      "id": "B229",
+      "category": "AI Agents",
+      "type": "conceptual",
+      "question": "What are the main ideas behind agent memory?",
+      "relevance": {
+        "seed_012": 2
+      },
+      "target_seed": "seed_012"
+    },
+    {
+      "id": "B230",
+      "category": "AI Agents",
+      "type": "conceptual",
+      "question": "What practical decision depends on understanding agent memory?",
+      "relevance": {
+        "seed_012": 2
+      },
+      "target_seed": "seed_012"
+    },
+    {
+      "id": "B231",
+      "category": "AI Agents",
+      "type": "related",
+      "question": "How is agent memory related to good system or program design?",
+      "relevance": {
+        "seed_012": 2,
+        "seed_011": 1
+      },
+      "target_seed": "seed_012"
+    },
+    {
+      "id": "B232",
+      "category": "AI Agents",
+      "type": "related",
+      "question": "What common mistake can happen when working with agent memory?",
+      "relevance": {
+        "seed_012": 2,
+        "seed_011": 1
+      },
+      "target_seed": "seed_012"
+    },
+    {
+      "id": "B233",
+      "category": "AI Agents",
+      "type": "related",
+      "question": "How would you explain the benefit of agent memory to a beginner?",
+      "relevance": {
+        "seed_012": 2,
+        "seed_011": 1
+      },
+      "target_seed": "seed_012"
+    },
+    {
+      "id": "B234",
+      "category": "AI Agents",
+      "type": "related",
+      "question": "When would choosing the right approach to agent memory matter?",
+      "relevance": {
+        "seed_012": 2,
+        "seed_011": 1
+      },
+      "target_seed": "seed_012"
+    },
+    {
+      "id": "B235",
+      "category": "AI Agents",
+      "type": "related",
+      "question": "What should be considered before applying agent memory?",
+      "relevance": {
+        "seed_012": 2,
+        "seed_011": 1
+      },
+      "target_seed": "seed_012"
+    },
+    {
+      "id": "B236",
+      "category": "AI Agents",
+      "type": "hard_negative",
+      "question": "How is seed_011 different from agent memory?",
+      "relevance": {
+        "seed_012": 2,
+        "seed_011": 0
+      },
+      "target_seed": "seed_012"
+    },
+    {
+      "id": "B237",
+      "category": "AI Agents",
+      "type": "hard_negative",
+      "question": "Why should seed_011 not be confused with agent memory?",
+      "relevance": {
+        "seed_012": 2,
+        "seed_011": 0
+      },
+      "target_seed": "seed_012"
+    },
+    {
+      "id": "B238",
+      "category": "AI Agents",
+      "type": "hard_negative",
+      "question": "Which is more directly relevant here: seed_011 or agent memory, and why?",
+      "relevance": {
+        "seed_012": 2,
+        "seed_011": 0
+      },
+      "target_seed": "seed_012"
+    },
+    {
+      "id": "B239",
+      "category": "AI Agents",
+      "type": "cross_concept",
+      "question": "How could agent memory interact with seed_011 in a real application?",
+      "relevance": {
+        "seed_012": 2,
+        "seed_011": 1,
+        "seed_009": 1
+      },
+      "target_seed": "seed_012"
+    },
+    {
+      "id": "B240",
+      "category": "AI Agents",
+      "type": "cross_concept",
+      "question": "How could knowledge of agent memory help when working with seed_009?",
+      "relevance": {
+        "seed_012": 2,
+        "seed_011": 1,
+        "seed_009": 1
+      },
+      "target_seed": "seed_012"
+    },
+    {
+      "id": "C01",
+      "category": "DBMS + SQL",
+      "type": "cross_concept",
+      "question": "How do normalization, foreign keys, and INNER JOIN work together?",
+      "relevance": {
+        "seed_006": 2,
+        "seed_005": 2,
+        "seed_007": 2
+      },
+      "target_seed": null
+    },
+    {
+      "id": "C02",
+      "category": "Python + DSA",
+      "type": "cross_concept",
+      "question": "How could a Python list implement stack or queue behavior?",
+      "relevance": {
+        "seed_002": 2,
+        "seed_004": 2
+      },
+      "target_seed": null
+    },
+    {
+      "id": "C03",
+      "category": "ML",
+      "type": "cross_concept",
+      "question": "How can a decision tree become overfit as its complexity increases?",
+      "relevance": {
+        "seed_009": 2,
+        "seed_010": 2
+      },
+      "target_seed": null
+    },
+    {
+      "id": "C04",
+      "category": "RAG + Agents",
+      "type": "cross_concept",
+      "question": "How can an AI agent combine persistent memory with RAG?",
+      "relevance": {
+        "seed_012": 2,
+        "seed_011": 2
+      },
+      "target_seed": null
+    },
+    {
+      "id": "C05",
+      "category": "DBMS + SQL",
+      "type": "cross_concept",
+      "question": "Why can normalization increase the need for joins?",
+      "relevance": {
+        "seed_006": 2,
+        "seed_007": 2
+      },
+      "target_seed": null
+    },
+    {
+      "id": "C06",
+      "category": "AI + RAG",
+      "type": "cross_concept",
+      "question": "How can retrieval supply knowledge that agent memory does not contain?",
+      "relevance": {
+        "seed_011": 2,
+        "seed_012": 2
+      },
+      "target_seed": null
+    },
+    {
+      "id": "C07",
+      "category": "Python + ML",
+      "type": "cross_concept",
+      "question": "How would you debug a Python model that appears to overfit?",
+      "relevance": {
+        "seed_001": 2,
+        "seed_009": 2
+      },
+      "target_seed": null
+    },
+    {
+      "id": "C08",
+      "category": "DSA + Python",
+      "type": "cross_concept",
+      "question": "How would you choose between a stack and queue in a Python implementation?",
+      "relevance": {
+        "seed_004": 2,
+        "seed_002": 1
+      },
+      "target_seed": null
+    },
+    {
+      "id": "C09",
+      "category": "Cloud + AI",
+      "type": "cross_concept",
+      "question": "Why might an AI application use hybrid cloud for sensitive workloads?",
+      "relevance": {
+        "seed_008": 2,
+        "seed_012": 1
+      },
+      "target_seed": null
+    },
+    {
+      "id": "C10",
+      "category": "RAG + Graph",
+      "type": "cross_concept",
+      "question": "How could a graph of learned experiences improve retrieval before generation?",
+      "relevance": {
+        "seed_011": 2,
+        "seed_012": 2
+      },
+      "target_seed": null
+    }
+  ]
+}

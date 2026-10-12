@@ -1,0 +1,74 @@
+[
+  {
+    "id": "Q01",
+    "category": "Python",
+    "question": "How should I debug a Python error?",
+    "reference_points": ["Read the traceback and error message", "Locate the failing line", "Inspect relevant variables and assumptions", "Reproduce the issue and test a focused fix"]
+  },
+  {
+    "id": "Q02",
+    "category": "Python",
+    "question": "What is the difference between a Python list and tuple?",
+    "reference_points": ["Lists are mutable", "Tuples are immutable", "Both are ordered sequences", "Tuples are useful for fixed collections"]
+  },
+  {
+    "id": "Q03",
+    "category": "C++ DSA",
+    "question": "What is the time complexity of binary search and why?",
+    "reference_points": ["Time complexity is O(log n)", "Each step halves the remaining search interval", "It requires sorted data"]
+  },
+  {
+    "id": "Q04",
+    "category": "C++ DSA",
+    "question": "What is the difference between a stack and a queue?",
+    "reference_points": ["Stack uses LIFO", "Queue uses FIFO", "Stack operations occur at the top", "Queue inserts at the rear and removes from the front"]
+  },
+  {
+    "id": "Q05",
+    "category": "DBMS",
+    "question": "What is the difference between a primary key and a foreign key?",
+    "reference_points": ["Primary key uniquely identifies rows", "Primary key cannot contain duplicate values", "Foreign key references a key in another or the same table", "Foreign keys enforce referential relationships"]
+  },
+  {
+    "id": "Q06",
+    "category": "DBMS",
+    "question": "Why is database normalization used?",
+    "reference_points": ["It reduces data redundancy", "It helps prevent update, insert, and delete anomalies", "It organizes data into related tables", "Normalization improves data integrity"]
+  },
+  {
+    "id": "Q07",
+    "category": "SQL",
+    "question": "What does an INNER JOIN do in SQL?",
+    "reference_points": ["It returns rows with matching values in both joined tables", "The join uses a specified join condition", "Non-matching rows are excluded"]
+  },
+  {
+    "id": "Q08",
+    "category": "Cloud",
+    "question": "What is the difference between public, private, and hybrid cloud?",
+    "reference_points": ["Public cloud resources are provided by a third-party provider", "Private cloud is dedicated to one organization", "Hybrid cloud combines private and public environments", "Hybrid setups can move or integrate workloads across environments"]
+  },
+  {
+    "id": "Q09",
+    "category": "Machine Learning",
+    "question": "What is overfitting in machine learning?",
+    "reference_points": ["The model learns training data too closely", "Training performance is high while generalization is poor", "It can be reduced using regularization, more data, simpler models, or validation"]
+  },
+  {
+    "id": "Q10",
+    "category": "Machine Learning",
+    "question": "What is the Gini impurity used for in a decision tree?",
+    "reference_points": ["It measures node impurity", "It is used to evaluate candidate splits", "Lower impurity indicates a more homogeneous node"]
+  },
+  {
+    "id": "Q11",
+    "category": "RAG",
+    "question": "What is retrieval-augmented generation (RAG)?",
+    "reference_points": ["A retriever finds relevant external or stored information", "Retrieved context is supplied to the language model", "The model generates an answer using that context", "RAG can ground responses in a knowledge source"]
+  },
+  {
+    "id": "Q12",
+    "category": "AI Agents",
+    "question": "Why would an AI agent use memory?",
+    "reference_points": ["Memory stores information from previous interactions", "Relevant memories can be retrieved for later tasks", "Memory can improve continuity and personalization", "Stored information should be managed and validated to avoid bad memories"]
+  }
+]

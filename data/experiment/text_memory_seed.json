@@ -1,0 +1,14 @@
+[
+  {"id":"seed_001","question":"How should I debug a Python error?","answer":"Start with the traceback and error message, locate the failing line, inspect relevant variables, reproduce the issue, and test a focused fix."},
+  {"id":"seed_002","question":"What is the difference between a Python list and tuple?","answer":"A list is mutable while a tuple is immutable. Both are ordered sequences, and tuples are useful when the collection should remain fixed."},
+  {"id":"seed_003","question":"What is the time complexity of binary search and why?","answer":"Binary search is O(log n) because each comparison roughly halves the remaining search interval. The data must be sorted."},
+  {"id":"seed_004","question":"What is the difference between a stack and a queue?","answer":"A stack follows LIFO, while a queue follows FIFO. A stack removes from the top; a queue normally inserts at the rear and removes from the front."},
+  {"id":"seed_005","question":"What is the difference between a primary key and a foreign key?","answer":"A primary key uniquely identifies rows in a table. A foreign key references a key in another or the same table and helps enforce relationships between tables."},
+  {"id":"seed_006","question":"Why is database normalization used?","answer":"Normalization reduces redundancy, helps prevent insert, update, and delete anomalies, organizes related data into tables, and improves integrity."},
+  {"id":"seed_007","question":"What does an INNER JOIN do in SQL?","answer":"INNER JOIN returns rows where the join condition matches in both tables. Rows without a match are excluded."},
+  {"id":"seed_008","question":"What is the difference between public, private, and hybrid cloud?","answer":"Public cloud is provided by a third-party provider, private cloud is dedicated to one organization, and hybrid cloud combines public and private environments."},
+  {"id":"seed_009","question":"What is overfitting in machine learning?","answer":"Overfitting occurs when a model fits training data too closely and generalizes poorly. Regularization, more data, simpler models, and validation can help."},
+  {"id":"seed_010","question":"What is the Gini impurity used for in a decision tree?","answer":"Gini impurity measures how mixed a node is and helps evaluate candidate splits. Lower impurity means a more homogeneous node."},
+  {"id":"seed_011","question":"What is retrieval-augmented generation or RAG?","answer":"RAG retrieves relevant information from a knowledge source and supplies it as context to a language model before generation."},
+  {"id":"seed_012","question":"Why would an AI agent use memory?","answer":"Memory preserves useful information from previous interactions so relevant information can be retrieved later, improving continuity and personalization. Memory should be validated."}
+]

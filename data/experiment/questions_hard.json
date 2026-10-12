@@ -1,0 +1,165 @@
+[
+  {
+    "id": "H01",
+    "category": "Python",
+    "question": "My Python program crashes and shows a traceback. What should I inspect first?",
+    "relevance": {
+      "seed_001": 2,
+      "seed_002": 1
+    }
+  },
+  {
+    "id": "H02",
+    "category": "Python",
+    "question": "How can I find the exact line responsible for a Python exception?",
+    "relevance": {
+      "seed_001": 2,
+      "seed_002": 1
+    }
+  },
+  {
+    "id": "H03",
+    "category": "Python",
+    "question": "What is the main difference between mutable and immutable Python sequences?",
+    "relevance": {
+      "seed_002": 2
+    }
+  },
+  {
+    "id": "H04",
+    "category": "Python",
+    "question": "When would I choose a tuple instead of a list in Python?",
+    "relevance": {
+      "seed_002": 2
+    }
+  },
+  {
+    "id": "H05",
+    "category": "C++ DSA",
+    "question": "Why does binary search become faster as the search interval is repeatedly divided?",
+    "relevance": {
+      "seed_003": 2
+    }
+  },
+  {
+    "id": "H06",
+    "category": "C++ DSA",
+    "question": "What requirement must be satisfied before binary search can be applied?",
+    "relevance": {
+      "seed_003": 2
+    }
+  },
+  {
+    "id": "H07",
+    "category": "C++ DSA",
+    "question": "Which data structure follows first-in-first-out ordering?",
+    "relevance": {
+      "seed_004": 2
+    }
+  },
+  {
+    "id": "H08",
+    "category": "C++ DSA",
+    "question": "How is removing an element from a stack different from removing one from a queue?",
+    "relevance": {
+      "seed_004": 2
+    }
+  },
+  {
+    "id": "H09",
+    "category": "DBMS",
+    "question": "Which database key uniquely identifies a record in its own table?",
+    "relevance": {
+      "seed_005": 2
+    }
+  },
+  {
+    "id": "H10",
+    "category": "DBMS",
+    "question": "How does a foreign key establish a relationship between database tables?",
+    "relevance": {
+      "seed_005": 2
+    }
+  },
+  {
+    "id": "H11",
+    "category": "DBMS",
+    "question": "Why would splitting redundant database information into related tables be useful?",
+    "relevance": {
+      "seed_006": 2,
+      "seed_005": 1
+    }
+  },
+  {
+    "id": "H12",
+    "category": "DBMS",
+    "question": "Which database design approach helps avoid update and deletion anomalies?",
+    "relevance": {
+      "seed_006": 2
+    }
+  },
+  {
+    "id": "H13",
+    "category": "SQL",
+    "question": "If I only want records that have matching values in both SQL tables, which join should I use?",
+    "relevance": {
+      "seed_007": 2
+    }
+  },
+  {
+    "id": "H14",
+    "category": "SQL",
+    "question": "What happens to unmatched rows when an INNER JOIN is used?",
+    "relevance": {
+      "seed_007": 2
+    }
+  },
+  {
+    "id": "H15",
+    "category": "Cloud",
+    "question": "Which cloud deployment approach combines resources from public and private environments?",
+    "relevance": {
+      "seed_008": 2
+    }
+  },
+  {
+    "id": "H16",
+    "category": "Cloud",
+    "question": "How does a private cloud differ from infrastructure shared through a public cloud provider?",
+    "relevance": {
+      "seed_008": 2
+    }
+  },
+  {
+    "id": "H17",
+    "category": "Machine Learning",
+    "question": "Why can a machine-learning model achieve excellent training results but perform poorly on new data?",
+    "relevance": {
+      "seed_009": 2
+    }
+  },
+  {
+    "id": "H18",
+    "category": "Machine Learning",
+    "question": "What problem occurs when a model memorizes its training examples instead of learning patterns that generalize?",
+    "relevance": {
+      "seed_009": 2
+    }
+  },
+  {
+    "id": "H19",
+    "category": "Machine Learning",
+    "question": "What does Gini impurity tell us when selecting a decision-tree split?",
+    "relevance": {
+      "seed_010": 2
+    }
+  },
+  {
+    "id": "H20",
+    "category": "RAG",
+    "question": "How does retrieving external information before generating an answer help an AI system?",
+    "relevance": {
+      "seed_011": 2
+    }
+  }
+]
